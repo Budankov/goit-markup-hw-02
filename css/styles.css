@@ -1,0 +1,209 @@
+/* 
+Шрифты используемые на сайте:
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; 
+*/
+
+/* 
+Цвета используемые на сайте:
+цвет основного текста #757575;
+цвет текста заголовков #212121;
+белый #FFFFFF;
+акцент #2196F3;
+цвет фона футера #2F303A;
+ */
+
+ :root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #FFFFFF;
+  --logo-color: #000000;
+  --secondary-bcg-color: #2F303A;
+  --teams-section-bcg-color: #F5F4FA;
+  --footer-contact-color: rgba(255, 255, 255, 0.6);
+  --primary-font: 'Roboto', sans-serif;
+  --logo-font: 'Raleway', sans-serif;
+}
+
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  font-style: normal;
+}
+
+/* Шапка сайта */
+.logo-primary,
+.logo-secondary {
+  font-family: var(--logo-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19; 
+  color: var(--logo-color);
+}
+
+.logo-accent {
+  color: var(--accent-color);
+}
+
+.logo-secondary {
+  color: var(--primary-white-color);
+}
+
+.site-nav .link,
+.contact-nav .link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+
+.contact-item .link {
+  color: var(--primary-text-color);
+}
+
+.site-nav .link.current,
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contact-nav .link:hover,
+.contact-nav .link:focus {
+  color: var(--accent-color);
+}
+/* Конец шапки сайта */
+
+/* Футер */
+.footer {
+  background-color: var(--secondary-bcg-color);
+}
+
+.address .link {
+  color: var(--footer-contact-color);
+}
+
+.address .location {
+  color: var(--primary-white-color);
+}
+
+.address .location:hover,
+.address .location:focus,
+.address .link:hover,
+.address .link:focus {
+  color: var(--accent-color);
+}
+/* Конец футера */
+
+/* Основной блок главной страницы (Студия) */
+/* Герой. Цвет фона задал временно, что бы видно было текст. */
+.hero {
+  background-color: var(--secondary-bcg-color)
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+.button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+  cursor: pointer;
+}
+/* Конец героя */
+
+/* Особенности */
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+.feature-title {
+  font-weight: 700;
+  font-size: inherit;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+/* Конец особенностей */
+
+/* Наша команда */
+.teams {
+  background-color: var(--teams-section-bcg-color);
+}
+
+.member-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.member-position {
+  font-size: 16px;
+  line-height: 1.18;
+}
+/*Конец нашей команды */
+/* Конец основного блока главной страницы (Студия) */
+
+/* Страница портфолио */
+/* Список фильтров */
+.filter-category {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  background-color: var(--teams-section-bcg-color);
+  cursor: pointer;
+}
+
+.filter-category:hover,
+.filter-category:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+/* Конец списка фильтров */
+
+/* Список проектов */
+.project-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+.project-caption {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--primary-text-color);
+}
+/* Конец списка проектов */
+/* Конец страницы портфолио */
