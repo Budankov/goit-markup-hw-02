@@ -175,6 +175,7 @@ body {
 /* Страница портфолио */
 /* Список фильтров */
 .filter-category {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
